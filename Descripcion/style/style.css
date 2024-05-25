@@ -1,0 +1,241 @@
+:root {
+  /* Fonts Family */ 
+ --roboto-font: "Roboto", sans-serif;
+ --lilita-font: "Lilita One", cursive;
+ --oswald-font: "Oswald", sans-serif;
+
+ /* Colors */
+ --light-black:#333;
+ --light-white:#f7f7f7;
+ --light-red:#e3000e;  
+ --light-grey:#f6f9fa;
+ --light-grey-2:#dddddd;
+ --white:#fff;
+ --yellow:#f7be27;
+ --grey:#757575;
+ --brown:#6f5e4d;
+ --bg-coffee:#642f21;
+}
+
+
+
+
+/* Style Navbar */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 10%;
+    height: 8px;
+    background-color: #1c1c1c;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+.logo{
+    max-width: 10rem;
+}
+
+.nav-list{
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-red);
+    font-family: var(--oswald-font);
+}
+
+.abrir-menu,
+.cerrar-menu{
+    display: none;
+}
+
+@media screen and (max-width: 700px){
+    .abrir-menu,
+    .cerrar-menu{
+        display: block;
+    }
+   
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0, .5);
+        
+    }
+
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+        
+      }
+
+
+}
+
+.abrir-menu,
+.cerrar-menu{
+  background-color: #1c1c1c;
+  color: #dddddd;
+}
+
+
+.main{
+  padding-top: 5rem;
+}
+
+/* Fondo */
+body {
+  background-image: url(../img/bg-section.jpg);
+}
+
+/*cards*/
+.cards{
+  display: flex;
+  justify-content: space-around;
+   
+}
+
+/*card*/
+
+.card{
+  max-width: min-content;
+  background-color: #dddddd;
+  padding: 10px;
+  border: solid 2px;
+  border-color: #1c1c1c;
+  border-radius: 10px;
+  gap: 2rem;
+}
+
+/* titulo */
+.card_title {
+  color: var(--light-red);
+  font-family: var(--oswald-font);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+
+/* foto */
+.burger {
+  max-width: 500px;
+  height: 100%;
+  object-fit: contain;
+   
+}
+
+/* selección */
+.checkbox {
+   padding: 0 0 0 8%;
+}
+
+/*descripción */
+.card-text {
+  font-size: 1rem;
+  font-family: var(--roboto-font);
+  font-weight: 500;    
+}
+
+/*ingredientes  */
+
+.Ingredientes {
+  color: var(--light-red);
+  font-family: var(--oswald-font);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+/* descripción */
+label {
+  font-size: 1rem;
+  font-family: var(--roboto-font);
+  font-weight: 500;  
+  cursor: pointer;  
+}
+
+/* boton de envio */
+#boton_pedido {
+   text-align: right;
+   margin-top: 5%;
+}
+
+.btn-primary {
+  margin: 7%;
+  background-color: var(--light-red);
+  border: 1px;
+  border-color: var(--light-red);
+  font-family: var(--oswald-font);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Style Footer */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+  
+  
+}
+.footer_text {
+  font-family: var(--oswald-font);
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.facebook:hover {
+  background: #41579a;
+  color: #fff;
+  border-radius: 5px;
+}  
+
+.whatsapp:hover {
+  background: #4cc85a;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.instagram:hover {
+  background: linear-gradient(
+    to top right,
+    #fcde30,
+    #e9712a,
+    #d2313b,
+    #ae4198,
+    #7540a1,
+    #5443a8
+  );
+  color: #fff;
+  border-radius: 5px;
+}
