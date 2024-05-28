@@ -11,31 +11,7 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("visible")
 })
 
-
-
-
-
-/* 
-    Código para que cambie el color del navbar cuando se haga scroll
-*/
-document.addEventListener('scroll' , () => { 
-    const header=document.querySelector('.navbar_bg');
-    if (window.scrollY > 80) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
-    }
-});
-
-// document.addEventListener('scroll' , () => c 
-//     const header=document.querySelector('.sidebar');
-//     if (window.scrollY > 80) {
-//         header.classList.add('scrolled');
-//     } else {
-//         header.classList.remove('scrolled');
-//     });
-
-/* Inicio de Sesion - Registro */
+/*registro*/
 
 let btnSend = document.querySelector("#btn-send");
 
